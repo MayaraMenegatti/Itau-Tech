@@ -78,6 +78,7 @@ main section {
     border-radius: 5px;
     box-shadow: 0 0 8px gray;
     padding: 30px;
+    font-size: 15px;
 }
 
 main h1 {
