@@ -1,0 +1,250 @@
+/* Definição de variáveis
+https://www.w3schools.com/css/css3_variables.asp */
+
+:root {
+    --itau-laranja: #ec7000;
+    --itau-azul: #003499;
+    --itau-fundo: #efe9e5;
+    --itau-rodape: #706a66;
+    --itau-btn_hover: #d27000;
+    --itau-form: #56504c;
+    --padding-lateral: 120px;
+}
+
+/* Tamanho mínimo da página */
+
+html {
+    min-width: 768px;
+}
+
+/* Corpo da página */
+
+body {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Barra de navegação principal */
+
+nav {
+    /* position: fixed; */
+    width: 100%;
+    height: 50px;
+    background-color: var(--itau-laranja);
+    padding: 19px var(--padding-lateral);
+}
+
+/* Logo da barra de navegação */
+
+nav img {
+    width: 50px;
+}
+
+/* Cabeçalho */
+
+header {
+    /* Adobe Stock - imagem gratuita (https://stock.adobe.com/br/search/free?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=0&filters%5Bcontent_type%3Atemplate%5D=0&filters%5Bcontent_type%3A3d%5D=0&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=0&filters%5Bfree_collection%5D=1&filters%5Bcontent_type%3Aimage%5D=1&filters%5Border%5D=relevance&k=finan%C3%A7a&order=relevance&safe_search=1&search_type=asset-type-change&search_page=1&get_facets=0&asset_id=414881133) */
+    background-image: url("./cabeçalho.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 3px black;
+    padding: 100px 0 0 var(--padding-lateral);
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* Bloco principal */
+
+main {
+    background-color: var(--itau-fundo);
+    padding: 35px var(--padding-lateral);
+}
+
+main section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px gray;
+    padding: 30px;
+}
+
+main h1 {
+    color: var(--itau-laranja);
+    padding-bottom: 15px;
+}
+
+/* Formulário */
+
+form {
+    /* padding-right: 35px; */
+    padding: 0;
+}
+
+/* Animação dos labels: https://www.youtube.com/watch?v=IxRJ8vplzAo */
+
+.formInput {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.formInput input, .formInput select, .formInput textarea {
+    width: calc(100% - 38px);
+    height: 100%;
+    padding: 0 18px;
+    border: 1px solid var(--itau-form);
+    color: var(--itau-form);
+    outline: none;
+}
+
+.formInput select {
+    width: 100%;
+}
+
+.formInput textarea {
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.formInput label {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.formInput label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.content-name {
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 0 8px;
+}
+
+.formInput input:focus+.label-name .content-name, .formInput select:focus+.label-name .content-name, .formInput textarea:focus+.label-name .content-name, .formInput input:not(:placeholder-shown)+.label-name .content-name, .formInput select:not(:placeholder-shown)+.label-name .content-name, .formInput textarea:not(:placeholder-shown)+.label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: var(--itau-laranja);
+}
+
+/* Mouse sobre inputs ou Inputs recebem foco*/
+
+input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:focus {
+    border: 1px solid var(--itau-laranja);
+}
+
+/* input[type=text], input[type=email], input[type=number], input[type=date], textarea, select { */
+
+/* input, textarea, select {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0 16px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    resize: none;
+} */
+
+/* input[type=text]:hover, input[type=email]:hover, input[type=number]:hover, input[type=date]:hover, textarea:hover, select:hover {
+    border: 1px solid var(--itau-laranja);
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus, select:focus {
+    border: 1px solid var(--itau-laranja);
+} */
+
+input[type='radio']:focus {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 3px solid gray;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+/* Botão de enviar */
+
+input[type=submit] {
+    width: 250px;
+    background-color: var(--itau-laranja);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--itau-btn_hover);
+}
+
+/* Rodapé */
+
+footer {
+    font-size: 12px;
+    background-color: var(--itau-rodape);
+    color: white;
+    height: 160px;
+    padding: 30px 0 0 40%;
+}
+
+footer h1 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    float: left;
+    font-size: 13px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,231 @@
+<!-- Informa ao navegador qual é a especificação do código que está sendo usada no documento -->
+<!doctype html>
+<!-- Declara o idioma principal do documento -->
+<html lang="pt-br">
+
+<head>
+    <!-- Título da página -->
+    <title>Cadastro pessoal | Banco Itaú</title>
+    <!-- Exibe a acentuação em português de forma correta -->
+    <meta charset="utf-8">
+    <!-- Fonte Google 'Roboto Condensed' -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="./content/style.css">
+    <!-- Ícone da página -->
+    <link rel="icon" type="image/webp" href="./imagens/logo-itau.webp">
+    <!-- Funções da Receita Federal - Validação de CPF -->
+    <script src="./content/receita.js"></script>
+    <!-- Funções da ViaCEP - Busca de CEP -->
+    <script src="./content/viacep.js"></script>
+    <!-- Funções do site -->
+    <script src="./content/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="https://www.itau.com.br"><img src="./imagens/logo-itau.webp" alt="Logotipo do Itaú"></a>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h2>Formulário de cadastro</h2>
+        <p>
+            Abra sua conta com praticidade, segurança e<br> de forma 100% digital.<br>
+            Vamos começar?
+        </p>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <section>
+            <h1>Dados pessoais</h1>
+            <form method="get" action="./resultado.html">
+
+                <div class="formInput">
+                    <input type="text" id="formNome" name="nome" placeholder=" " required onfocus="this.select();">
+                    <label class="label-name" for="formNome">
+                        <span class="content-name">nome completo*</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formCPF" name="cpf" placeholder=" " required onfocus="this.select();"
+                        onblur="ajustaCPF(this.value);">
+                    <label class="label-name" for="formCPF">
+                        <span class="content-name">cpf*</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formRG" name="rg" placeholder=" " onfocus="this.select();">
+                    <label class="label-name" for="formRG">
+                        <span class="content-name">rg</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="email" id="formE-mail" name="e-mail" placeholder=" " onfocus="this.select();">
+                    <label class="label-name" for="formE-mail">
+                        <span class="content-name">e-mail</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formTel" name="tel" placeholder=" " onfocus="this.select();"
+                        onblur="ajustaTelefone(this.value);">
+                    <label class="label-name" for="formTel">
+                        <span class="content-name">telefone fixo <small>(com DDD)</small></span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formCel" name="cel" placeholder=" " required onfocus="this.select();"
+                        onblur="ajustaCelular(this.value);">
+                    <label class="label-name" for="formCel">
+                        <span class="content-name">telefone celular <small>(com DDD)*</small></span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="date" id="formNasc" name="nasc">
+                    <label class="label-name" for="formNasc">
+                        <span class="content-name">data de nascimento</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <select id="formSexo" name="sexo" placeholder=" ">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                    <label class="label-name" for="formSexo">
+                        <span class="content-name">sexo</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <select id="formCivil" name="civil" placeholder=" ">
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="separado">Separado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                    </select>
+                    <label class="label-name" for="formCivil">
+                        <span class="content-name">estado civíl</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formCEP" name="cep" placeholder=" " onfocus="this.select();"
+                        onblur="ajustaCEP(this.value);">
+                    <label class="label-name" for="formCEP">
+                        <span class="content-name">cep</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formRua" name="rua" placeholder=" " required onfocus="this.select();">
+                    <label class="label-name" for="formRua">
+                        <span class="content-name">rua*</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <input type="text" id="formNum" name="num" placeholder=" " required onfocus="this.select();">
+                    <label class="label-name" for="formNum">
+                        <span class="content-name">número*</span>
+                    </label>
+                </div>
+               
+                <div class="formInput">
+                    <input type="text" id="formComp" name="comp" placeholder=" " onfocus="this.select();">
+                    <label class="label-name" for="formComp">
+                        <span class="content-name">complemento</span>
+                    </label>
+                </div>
+                
+                <div class="formInput">
+                    <input type="text" id="formBairro" name="bairro" placeholder=" " onfocus="this.select();">
+                    <label class="label-name" for="formBairro">
+                        <span class="content-name">bairro</span>
+                    </label>
+                </div>
+                
+                <div class="formInput">
+                    <input type="text" id="formCid" name="cid" placeholder=" " onfocus="this.select();">
+                    <label class="label-name" for="formCid">
+                        <span class="content-name">cidade</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <select id="formUF" name="uf" placeholder=" ">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <label class="label-name" for="formUF">
+                        <span class="content-name">estado</span>
+                    </label>
+                </div>
+
+                <div class="formInput">
+                    <textarea id="formObs" name="obs" placeholder=" " onfocus="this.select();"></textarea>
+                    <label class="label-name" for="formObs">
+                        <span class="content-name">observações</span>
+                    </label>
+                </div>
+                <br>
+                <p><small>* É obrigatório</small></p>
+                <input type="submit" value="inscreva-se">
+               
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>
+        <h1>© 2021 Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23</h1>
+        </p>
+        <p>
+            Praça Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal, Parque Jabaquara - CEP 04344-902 - São Paulo
+            - Brasil
+        </p>
+        <ul>
+            <li><a target="_blank" href="https://www.itau.com.br/relacoes-com-investidores/show.aspx?idMateria=I10ZsSdMkCjT2+mWu+lg5g==&linguagem=pt">Programa Formação Tech itaú</a></li>
+            <li><a target="_blank" href="https://www.gama.academy/">Gama Academy</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/mayara-menegatti-4a2a8685/">Mayara Menegatti</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

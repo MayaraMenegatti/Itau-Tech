@@ -1,0 +1,84 @@
+<!-- Informa ao navegador qual é a especificação do código que está sendo usada no documento -->
+<!doctype html>
+<!-- Declara o idioma principal do documento -->
+<html lang="pt-br">
+
+<head>
+    <!-- Título da página -->
+    <title>Cadastro pessoal | Banco Itaú</title>
+    <!-- Exibe a acentuação em português de forma correta -->
+    <meta charset="utf-8">
+    <!-- Conjunto de ícones para a barra de navegação -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonte Google 'Roboto Condensed' -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="./content/style.css">
+    <!-- Ícone da página -->
+    <link rel="icon" type="image/webp" href="./imagens/logo-itau.webp">
+    <!-- Funções da Receita Federal - Validação de CPF -->
+    <script src="./content/receita.js"></script>
+    <!-- Funções da ViaCEP - Busca de CEP -->
+    <script src="./content/viacep.js"></script>
+    <!-- Funções do site -->
+    <script src="./content/scripts.js"></script>
+</head>
+
+<body onload="carregaInformacoes()">
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="https://www.itau.com.br"><img src="./imagens/logo-itau.webp" alt="Logotipo do Itaú"></a>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h2>Formulário de cadastro</h2>
+        <p>
+            Abra sua conta com praticidade, segurança e<br> de forma 100% digital.<br>
+            Vamos começar?
+        </p>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <section>
+            <h1>Agradecemos por suas informações, o envio foi efetuado com sucesso! </h1>
+            <p><b>Nome: </b><span id="formNome"></span></p>
+            <p><b>CPF: </b><span id="formCPF"></span></p>
+            <p><b>RG: </b><span id="formRG"></span></p>
+            <p><b>E-mail: </b><span id="formE-mail"></span></p>
+            <p><b>Telefone fixo: </b><span id="formTel"></span></p>
+            <p><b>Telefone celular: </b><span id="formCel"></span></p>
+            <p><b>Data de nascimento: </b><span id="formNasc"></span></p>
+            <p><b>Sexo: </b><span id="formSexo"></span></p>
+            <p><b>Estado civil: </b><span id="formCivil"></span></p>
+            <p><b>CEP: </b><span id="formCEP"></span></p>
+            <p><b>Rua: </b><span id="formRua"></span></p>
+            <p><b>Número: </b><span id="formNum"></span></p>
+            <p><b>Complemento: </b><span id="formComp"></span></p>
+            <p><b>Bairro: </b><span id="formBairro"></span></p>
+            <p><b>Cidade: </b><span id="formCid"></span></p>
+            <p><b>Estado: </b><span id="formUF"></span></p>
+            <p><b>Observações: </b><span id="formObs"></span></p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>
+        <h1>© 2021 Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23</h1>
+        </p>
+        <p>
+            Praça Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal, Parque Jabaquara - CEP 04344-902 - São Paulo
+            - Brasil
+        </p>
+        <ul>
+            <li><a target="_blank" href="https://www.itau.com.br/relacoes-com-investidores/show.aspx?idMateria=I10ZsSdMkCjT2+mWu+lg5g==&linguagem=pt">Programa Formação Tech itaú</a></li>
+            <li><a target="_blank" href="https://www.gama.academy/">Gama Academy</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/mayara-menegatti-4a2a8685/">Mayara Menegatti</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
