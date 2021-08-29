@@ -36,7 +36,16 @@ nav {
 /* Logo da barra de navegação */
 
 nav img {
+    float: left;
     width: 50px;
+}
+
+nav h1 {
+    float: left;
+    font-size: 17px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
 }
 
 /* Cabeçalho */
@@ -73,6 +82,9 @@ main section {
 
 main h1 {
     color: var(--itau-laranja);
+}
+
+main h4 {
     padding-bottom: 15px;
 }
 
