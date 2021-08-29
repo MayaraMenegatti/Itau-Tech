@@ -74,28 +74,28 @@ function ajustaCEP(valor) {
 function carregaInformacoes() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    document.getElementById('formNome').innerHTML = urlParams.get('nome');
-    document.getElementById('formCPF').innerHTML = urlParams.get('cpf');
-    document.getElementById('formRG').innerHTML = urlParams.get('rg');
-    document.getElementById('formE-mail').innerHTML = urlParams.get('e-mail');
-    document.getElementById('formTel').innerHTML = urlParams.get('tel');
-    document.getElementById('formCel').innerHTML = urlParams.get('cel');
+    document.getElementById('formNome').textContent = urlParams.get('nome');
+    document.getElementById('formCPF').textContent = urlParams.get('cpf');
+    document.getElementById('formRG').textContent = urlParams.get('rg');
+    document.getElementById('formE-mail').textContent = urlParams.get('e-mail');
+    document.getElementById('formTel').textContent = urlParams.get('tel');
+    document.getElementById('formCel').textContent = urlParams.get('cel');
     if (urlParams.get('nasc')) {
         const data = new Date(urlParams.get('nasc'));
-        document.getElementById('formNasc').innerHTML = data.toLocaleDateString('pt-Br', { timeZone: 'UTC', dateStyle: 'long' });
+        document.getElementById('formNasc').textContent = data.toLocaleDateString('pt-Br', { timeZone: 'UTC', dateStyle: 'long' });
     }
     if (urlParams.get('sexo') == 'M') {
-        document.getElementById('formSexo').innerHTML = 'masculino';
+        document.getElementById('formSexo').textContent = 'masculino';
     } else {
-        document.getElementById('formSexo').innerHTML = 'feminino';
+        document.getElementById('formSexo').textContent = 'feminino';
     }
-    document.getElementById('formCivil').innerHTML = urlParams.get('civil');
-    document.getElementById('formCEP').innerHTML = urlParams.get('cep');
-    document.getElementById('formRua').innerHTML = urlParams.get('rua');
-    document.getElementById('formNum').innerHTML = urlParams.get('num');
-    document.getElementById('formComp').innerHTML = urlParams.get('comp');
-    document.getElementById('formBairro').innerHTML = urlParams.get('bairro');
-    document.getElementById('formCid').innerHTML = urlParams.get('cid');
-    document.getElementById('formUF').innerHTML = urlParams.get('uf');
-    document.getElementById('formObs').innerHTML = urlParams.get('obs');
+    document.getElementById('formCivil').textContent = urlParams.get('civil');
+    document.getElementById('formCEP').textContent = urlParams.get('cep');
+    document.getElementById('formRua').textContent = urlParams.get('rua');
+    document.getElementById('formNum').textContent = urlParams.get('num');
+    document.getElementById('formComp').textContent = urlParams.get('comp');
+    document.getElementById('formBairro').textContent = urlParams.get('bairro');
+    document.getElementById('formCid').textContent = urlParams.get('cid');
+    document.getElementById('formUF').textContent = urlParams.get('uf');
+    document.getElementById('formObs').textContent = urlParams.get('obs');
 }
