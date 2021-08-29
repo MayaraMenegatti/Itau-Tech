@@ -74,7 +74,7 @@ function ajustaCEP(valor) {
 function carregaInformacoes() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    document.getElementById('formNome').innerText = urlParams.get('nome');
+    document.getElementById('formNome').textContent = urlParams.get('nome');
     document.getElementById('formCPF').textContent = urlParams.get('cpf');
     document.getElementById('formRG').textContent = urlParams.get('rg');
     document.getElementById('formE-mail').textContent = urlParams.get('e-mail');
