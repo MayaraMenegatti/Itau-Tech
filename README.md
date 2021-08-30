@@ -12,9 +12,9 @@ Projeto Final Itaú Tech
 
 **Autor:**
  
- Mayara Fernanda Menegatti
- Idade: 27 anos
- Tipo de Deficiência: Cegueira de um olho
+- Mayara Fernanda Menegatti
+- Idade: 27 anos
+- Tipo de Deficiência: Cegueira de um olho
 
 **Descrição:**
  
