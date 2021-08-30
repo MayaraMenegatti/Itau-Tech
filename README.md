@@ -1,4 +1,4 @@
-[Desafio Cadastro Pessoal - Formação Tech](https://github.com/MayaraMenegatti/cadastro-pessoal/edit/main/README.md)
+Desafio Cadastro Pessoal - Formação Tech
 
 Projeto Final Itaú Tech
 
