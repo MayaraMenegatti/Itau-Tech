@@ -7,14 +7,14 @@ Projeto Final Itaú Tech
  - Descrição  
  - Objetivo  
  - Ferramenta 
- -  Linguagens 
- -  Referências
+ - Linguagens 
+ - Referências
 
 **Autor:**
  
 - Mayara Fernanda Menegatti
 - Idade: 27 anos
-- Tipo de Deficiência: Cegueira de um olho
+- Tipo de Deficiência: Visão monocular
 
 **Descrição:**
  
