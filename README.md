@@ -25,7 +25,7 @@ Apaixonada pela área de TI como um hobby desde 2010, aventurando-se em conhecer
 
 **Objetivo:**
 
-Desenvolver um cadastro pessoal, de forma simples e acessível, com a criação de um formulário para registrar os dados pessoais, além de explorar validações.
+Desenvolver um cadastro pessoal, de forma simples e acessível, com a criação de um formulário para registrar os dados pessoais para a abertura de uma nova conta, além de explorar validações.
 
 **Ferramenta:**
 
