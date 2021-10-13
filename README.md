@@ -37,6 +37,7 @@ Visual Studio Code
  - JavaScript
  
 <h3>Referências</h3>
+
  - [w3schools](https://www.w3schools.com/) -  HTML, CSS e JavaScript
  - [imagecolorpicker](https://imagecolorpicker.com/) - cores para o layout 
  - [receita federal](http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/funcoes.js) - funções de validação de CPF 
