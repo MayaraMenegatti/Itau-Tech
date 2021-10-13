@@ -38,13 +38,9 @@ Visual Studio Code
  
 <h3>Referências</h3>
  - [w3schools](https://www.w3schools.com/) -  HTML, CSS e JavaScript
- - 
  - [imagecolorpicker](https://imagecolorpicker.com/) - cores para o layout 
- - 
  - [receita federal](http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/funcoes.js) - funções de validação de CPF 
- - 
  - [ViaCEP](https://viacep.com.br/exemplo/javascript/) - preenchimento dos campos de endereço através do CEP
- - 
  - [Dev Ed](https://www.youtube.com/watch?v=IxRJ8vplzAo) - Animação dos labels do formulário
  
 <h2>Link da página</h2>
