@@ -1,8 +1,8 @@
 # Desafio Cadastro Pessoal - Formação Tech
 
-Projeto Final Itaú Tech
+<h1>Projeto Final Itaú Tech</h1>
 
- Desafio Cadastro Pessoal - Formação Tech
+ <h2>Desafio Cadastro Pessoal - Formação Tech</h2>
  - Autor  
  - Descrição  
  - Objetivo  
