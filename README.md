@@ -1,4 +1,4 @@
-**Desafio Cadastro Pessoal - Formação Tech**
+# Desafio Cadastro Pessoal - Formação Tech
 
 Projeto Final Itaú Tech
 
@@ -43,6 +43,6 @@ Visual Studio Code
  - [receita federal](http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/funcoes.js) - funções de validação de CPF 
  - [ViaCEP](https://viacep.com.br/exemplo/javascript/) - preenchimento dos campos de endereço através do CEP
  - [Dev Ed](https://www.youtube.com/watch?v=IxRJ8vplzAo) - Animação dos labels do formulário
- - 
+ 
 <h2>Link da página</h2>
 https://compassionate-allen-5db74b.netlify.app/
