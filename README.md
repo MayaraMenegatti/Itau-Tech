@@ -10,7 +10,7 @@
  - Linguagens 
  - Referências
 
-**Autor:**
+<h3>**Autor:**</h3>
  
 - Mayara Fernanda Menegatti
 - Idade: 27 anos
